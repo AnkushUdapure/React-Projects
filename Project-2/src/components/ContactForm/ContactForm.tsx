@@ -1,14 +1,16 @@
+import { MdMessage } from "react-icons/md";
 import Button from "../Button/Button";
 import styles from "./ContactForm.module.css"
 
 const ContactForm = () => {
     return(
-        <select className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.contact_form}>
-            <Button />
+            <Button 
+            text="VIA SUPPORT CHAT" icon={<MdMessage/>}/>
             </div>
             <div className={styles.contact_image}></div>
-        </select>
+        </section>
 
     )
 };
